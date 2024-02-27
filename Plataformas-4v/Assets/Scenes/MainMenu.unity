@@ -170,6 +170,7 @@ GameObject:
   - component: {fileID: 627580511}
   - component: {fileID: 627580513}
   - component: {fileID: 627580512}
+  - component: {fileID: 627580514}
   m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
@@ -209,7 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.01419878, g: 0, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -234,6 +235,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627580510}
   m_CullTransparentMesh: 1
+--- !u!114 &627580514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627580510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a960e2abadc2de144b5a24ff618efb04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 0
 --- !u!1 &1021964137
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,6 +572,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1796731295}
   - component: {fileID: 1796731296}
+  - component: {fileID: 1796731297}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -638,6 +653,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1796731297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796731294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eceb7c51d198c654d9dd02b9b248cd70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sl: {fileID: 1796731296}
 --- !u!1 &1807679243
 GameObject:
   m_ObjectHideFlags: 0
