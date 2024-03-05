@@ -25,22 +25,25 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        SceneManager.LoadScene("Splash");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SceneManager.LoadScene("Splash");
-            
-        }
+       
         
     }
 
     public void LoudMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void LoadGameplay()
+    {
+        SceneManager.LoadScene("GamePlay");
+        SceneManager.LoadScene("GHI", LoadSceneMode.Additive);
+        
     }
 }

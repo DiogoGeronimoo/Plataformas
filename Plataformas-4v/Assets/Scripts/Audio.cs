@@ -14,7 +14,7 @@ public class Audio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AudioManeger.Instance.volume = sl.value;
+        AudioManeger.Instance.vol = sl.value;
 
     }
 }
